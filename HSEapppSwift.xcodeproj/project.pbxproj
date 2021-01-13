@@ -89,7 +89,7 @@
 		EA03E7DC25AC2B4300EF1FBF = {
 			isa = PBXGroup;
 			children = (
-				EA03E7E725AC2B4300EF1FBF /* HSEapppSwift */,
+				EA03E7E725AC2B4300EF1FBF /* HSEProjects */,
 				EA03E80125AC2B4500EF1FBF /* HSEapppSwiftTests */,
 				EA03E80C25AC2B4500EF1FBF /* HSEapppSwiftUITests */,
 				EA03E7E625AC2B4300EF1FBF /* Products */,
@@ -106,7 +106,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA03E7E725AC2B4300EF1FBF /* HSEapppSwift */ = {
+		EA03E7E725AC2B4300EF1FBF /* HSEProjects */ = {
 			isa = PBXGroup;
 			children = (
 				EA03E81F25AC39B500EF1FBF /* Core */,
@@ -120,7 +120,7 @@
 				EA03E7F125AC2B4300EF1FBF /* HSEProjects.xcdatamodeld */,
 				EA03E81B25AC2D7900EF1FBF /* StartViewController.swift */,
 			);
-			path = HSEapppSwift;
+			path = HSEProjects;
 			sourceTree = "<group>";
 		};
 		EA03E80125AC2B4500EF1FBF /* HSEapppSwiftTests */ = {
