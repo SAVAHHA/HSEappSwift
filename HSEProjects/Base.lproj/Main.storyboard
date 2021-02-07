@@ -26,7 +26,7 @@
         <!--Start-->
         <scene sceneID="udM-ln-0Y7">
             <objects>
-                <viewController id="N5D-Q2-hp6" customClass="StartViewController" customModule="HSEProjects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N5D-Q2-hp6" customClass="StartViewController" customModule="HSEapppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="snj-XG-ncD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
         <!--Плз эту страничку не трогай-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HSEProjects" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HSEapppSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="down" id="oTu-VW-rM3">
+                <swipeGestureRecognizer direction="right" id="oTu-VW-rM3">
                     <connections>
                         <action selector="updateProjects:" destination="BYZ-38-t0r" id="JMi-56-sgQ"/>
                     </connections>

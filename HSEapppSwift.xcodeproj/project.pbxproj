@@ -19,7 +19,8 @@
 		EA03E81C25AC2D7900EF1FBF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E81B25AC2D7900EF1FBF /* StartViewController.swift */; };
 		EA03E81E25AC344B00EF1FBF /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E81D25AC344B00EF1FBF /* Project.swift */; };
 		EA03E82125AC39D000EF1FBF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E82025AC39D000EF1FBF /* Parser.swift */; };
-		EA03E82425AC3A3000EF1FBF /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = EA03E82325AC3A3000EF1FBF /* SwiftSoup */; };
+		EA5D866225D00F2400D24BB4 /* Kanna in Frameworks */ = {isa = PBXBuildFile; productRef = EA5D866125D00F2400D24BB4 /* Kanna */; };
+		EA5D866525D00F4500D24BB4 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = EA5D866425D00F4500D24BB4 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA03E82425AC3A3000EF1FBF /* SwiftSoup in Frameworks */,
+				EA5D866225D00F2400D24BB4 /* Kanna in Frameworks */,
+				EA5D866525D00F4500D24BB4 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +169,8 @@
 			);
 			name = HSEapppSwift;
 			packageProductDependencies = (
-				EA03E82325AC3A3000EF1FBF /* SwiftSoup */,
+				EA5D866125D00F2400D24BB4 /* Kanna */,
+				EA5D866425D00F4500D24BB4 /* SwiftSoup */,
 			);
 			productName = HSEProjects;
 			productReference = EA03E7E525AC2B4300EF1FBF /* HSEapppSwift.app */;
@@ -242,7 +245,8 @@
 			);
 			mainGroup = EA03E7DC25AC2B4300EF1FBF;
 			packageReferences = (
-				EA03E82225AC3A3000EF1FBF /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				EA5D866025D00F2400D24BB4 /* XCRemoteSwiftPackageReference "Kanna" */,
+				EA5D866325D00F4500D24BB4 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = EA03E7E625AC2B4300EF1FBF /* Products */;
 			projectDirPath = "";
@@ -626,7 +630,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EA03E82225AC3A3000EF1FBF /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+		EA5D866025D00F2400D24BB4 /* XCRemoteSwiftPackageReference "Kanna" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tid-kijyun/Kanna";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.4;
+			};
+		};
+		EA5D866325D00F4500D24BB4 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
 			requirement = {
@@ -637,9 +649,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EA03E82325AC3A3000EF1FBF /* SwiftSoup */ = {
+		EA5D866125D00F2400D24BB4 /* Kanna */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EA03E82225AC3A3000EF1FBF /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			package = EA5D866025D00F2400D24BB4 /* XCRemoteSwiftPackageReference "Kanna" */;
+			productName = Kanna;
+		};
+		EA5D866425D00F4500D24BB4 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA5D866325D00F4500D24BB4 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
 			productName = SwiftSoup;
 		};
 /* End XCSwiftPackageProductDependency section */

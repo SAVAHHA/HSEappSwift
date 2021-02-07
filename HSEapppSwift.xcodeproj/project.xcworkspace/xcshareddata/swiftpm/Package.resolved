@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Kanna",
+        "repositoryURL": "https://github.com/tid-kijyun/Kanna",
+        "state": {
+          "branch": null,
+          "revision": "c657fb9f5827ef138068215c76ad0bb62bbc92da",
+          "version": "5.2.4"
+        }
+      },
+      {
         "package": "SwiftSoup",
         "repositoryURL": "https://github.com/scinfu/SwiftSoup",
         "state": {
