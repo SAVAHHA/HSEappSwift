@@ -39,22 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0734273E-4704-4763-B540-F4139142F7DD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HSEProjects/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7B71442D-6AD5-4790-9516-3A75FD80F657"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -63,9 +47,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "parseProjects()"
-            landmarkType = "7">
+            endingLineNumber = "29">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -79,9 +61,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "parseProjects()"
-            landmarkType = "7">
+            endingLineNumber = "33">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -95,9 +75,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "parseProjects()"
-            landmarkType = "7">
+            endingLineNumber = "45">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -111,25 +89,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "parseProjects()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BBD5DFF4-1A2C-424B-BA0E-BE21E0E336C8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HSEProjects/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "updateProjects(_:)"
-            landmarkType = "7">
+            endingLineNumber = "47">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

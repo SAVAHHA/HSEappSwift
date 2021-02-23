@@ -8,8 +8,6 @@
 
 import UIKit
 import CoreData
-import SwiftUI
-
 
 class ViewController: UIViewController {
 
@@ -36,27 +34,11 @@ class ViewController: UIViewController {
     //    viewDidLoad()
     //}
     @IBAction func updateProjects(_ sender: UISwipeGestureRecognizer) {
-        viewDidLoad()
         let parser = Parser()
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Project", in: context)
-        let newProject = NSManagedObject(entity: entity!, insertInto: context)
-        let textValue = parser.parseProjects()
-        newProject.setValue(textValue, forKey: "text")
-        do {
-           try context.save()
-          } catch {
-           print("Failed saving")
-        }
+        parser.parseProjects()
+        viewDidLoad()
     }
     
 
 }
 
-
-struct ViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
