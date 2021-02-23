@@ -3,18 +3,7 @@
     <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
         <attribute name="text" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="Sample" representedClassName="Sample" syncable="YES" codeGenerationType="class">
-        <attribute name="attribute" optional="YES" attributeType="String"/>
-        <attribute name="attribute1" optional="YES" attributeType="String"/>
-        <attribute name="attribute2" optional="YES" attributeType="String"/>
-        <attribute name="attribute3" optional="YES" attributeType="String"/>
-        <attribute name="attribute4" optional="YES" attributeType="String"/>
-        <attribute name="attribute5" optional="YES" attributeType="String"/>
-        <attribute name="attribute6" optional="YES" attributeType="String"/>
-        <attribute name="attribute7" optional="YES" attributeType="String"/>
-    </entity>
     <elements>
         <element name="Project" positionX="-54" positionY="-9" width="128" height="58"/>
-        <element name="Sample" positionX="-54" positionY="0" width="128" height="163"/>
     </elements>
 </model>
