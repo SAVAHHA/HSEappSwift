@@ -60,7 +60,7 @@ class Parser{
                     else{
                         _checkWhiteSpace = false
                     }
-                    n += 1
+                    _n += 1
                 }
                 var textValue = (String((projectName ?? "none") + "\n" + projectItem))
                 textValue = textValue.replacingOccurrences(of: "Показать все", with: "")
