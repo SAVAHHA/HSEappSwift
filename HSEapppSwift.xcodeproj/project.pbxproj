@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF443EDE26323A2100A3CC66 /* Projectt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EDD26323A2100A3CC66 /* Projectt.swift */; };
 		EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */; };
 		EA03E7EB25AC2B4300EF1FBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */; };
 		EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF443EDD26323A2100A3CC66 /* Projectt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectt.swift; sourceTree = "<group>"; };
 		EA03E7E525AC2B4300EF1FBF /* HSEapppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSEapppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */,
 				EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */,
 				EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */,
+				BF443EDD26323A2100A3CC66 /* Projectt.swift */,
 				EA03E7EE25AC2B4300EF1FBF /* Main.storyboard */,
 				EA03E7F425AC2B4500EF1FBF /* Assets.xcassets */,
 				EA03E7F625AC2B4500EF1FBF /* LaunchScreen.storyboard */,
@@ -295,6 +298,7 @@
 				EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */,
 				EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */,
 				EA03E7F325AC2B4300EF1FBF /* HSEProjects.xcdatamodeld in Sources */,
+				BF443EDE26323A2100A3CC66 /* Projectt.swift in Sources */,
 				EA03E7EB25AC2B4300EF1FBF /* SceneDelegate.swift in Sources */,
 				EA03E81E25AC344B00EF1FBF /* Project.swift in Sources */,
 				EA03E82125AC39D000EF1FBF /* Parser.swift in Sources */,

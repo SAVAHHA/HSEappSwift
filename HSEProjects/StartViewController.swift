@@ -27,9 +27,9 @@ class StartViewController: UIViewController {
             do{
                 let doc = try SwiftSoup.parse(htmlContent)
                 do{
-                    let element = try doc.select("title").first()
+                    let element = try doc.select("span").array()
                     do{
-                        let text = try element?.text()
+                        let text = try element[5].text()
                         tryLabel.text = text
                     }
                 }catch{
