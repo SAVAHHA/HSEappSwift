@@ -33,15 +33,26 @@ class StartViewController: UIViewController {
                 
                 do{
                     let element = try doc.select("h3").array()
+                    let elementRecommendendedProgramms = try doc.getElementsByClass("edu-dot-dot-dot").array()
+//                    let elementDeadline = try doc.select("span style").array()
+//                    let elementLeader = try doc.select("_blank").array()
                     
-                    
+        
                     do{
                         for index in 0..<element.count{
                             let text = try element[index].text()
-                            var name = ProjectStudents(name: text)
+                            var textRecPrograms = try elementRecommendendedProgramms[index].text()
+                            
+                            var newtextRecPrograms = textRecPrograms.dropLast(12)
+//                            var textLeader = try elementLeader[index].text()
+//                            print(textLeader)
+//                            var textDeadline = try elementDeadline[index].text()
+                                
+                            var name = ProjectStudents(name: text, recommendedPrograms: String(newtextRecPrograms))
                             infoProject.append(name)
                         }
-                print(infoProject)
+                        
+                        print(infoProject[0...3])
 
                     } 
                 }catch{
