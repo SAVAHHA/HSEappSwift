@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF443EDE26323A2100A3CC66 /* Projectt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EDD26323A2100A3CC66 /* Projectt.swift */; };
+		BF443EDE26323A2100A3CC66 /* ProjectStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EDD26323A2100A3CC66 /* ProjectStudents.swift */; };
+		BF443EE42633066700A3CC66 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EE32633066700A3CC66 /* ProjectCell.swift */; };
 		EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */; };
 		EA03E7EB25AC2B4300EF1FBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */; };
 		EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */; };
@@ -42,7 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF443EDD26323A2100A3CC66 /* Projectt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projectt.swift; sourceTree = "<group>"; };
+		BF443EDD26323A2100A3CC66 /* ProjectStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStudents.swift; sourceTree = "<group>"; };
+		BF443EE32633066700A3CC66 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		EA03E7E525AC2B4300EF1FBF /* HSEapppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSEapppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF443EEF26344E6400A3CC66 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BF443EDD26323A2100A3CC66 /* ProjectStudents.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BF443EF326344EE400A3CC66 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				BF443EE32633066700A3CC66 /* ProjectCell.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		BF443EF726344F0700A3CC66 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */,
+				EA03E81B25AC2D7900EF1FBF /* StartViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		BF443EFB26344F2300A3CC66 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */,
+				EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
 		EA03E7DC25AC2B4300EF1FBF = {
 			isa = PBXGroup;
 			children = (
@@ -114,16 +150,15 @@
 			isa = PBXGroup;
 			children = (
 				EA03E81F25AC39B500EF1FBF /* Core */,
-				EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */,
-				EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */,
-				EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */,
-				BF443EDD26323A2100A3CC66 /* Projectt.swift */,
+				BF443EFB26344F2300A3CC66 /* delegates */,
+				BF443EEF26344E6400A3CC66 /* model */,
 				EA03E7EE25AC2B4300EF1FBF /* Main.storyboard */,
-				EA03E7F425AC2B4500EF1FBF /* Assets.xcassets */,
+				BF443EF726344F0700A3CC66 /* controllers */,
+				BF443EF326344EE400A3CC66 /* VIew */,
 				EA03E7F625AC2B4500EF1FBF /* LaunchScreen.storyboard */,
 				EA03E7F925AC2B4500EF1FBF /* Info.plist */,
 				EA03E7F125AC2B4300EF1FBF /* HSEProjects.xcdatamodeld */,
-				EA03E81B25AC2D7900EF1FBF /* StartViewController.swift */,
+				EA03E7F425AC2B4500EF1FBF /* Assets.xcassets */,
 			);
 			path = HSEProjects;
 			sourceTree = "<group>";
@@ -295,10 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA03E81C25AC2D7900EF1FBF /* StartViewController.swift in Sources */,
+				BF443EE42633066700A3CC66 /* ProjectCell.swift in Sources */,
 				EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */,
 				EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */,
 				EA03E7F325AC2B4300EF1FBF /* HSEProjects.xcdatamodeld in Sources */,
-				BF443EDE26323A2100A3CC66 /* Projectt.swift in Sources */,
+				BF443EDE26323A2100A3CC66 /* ProjectStudents.swift in Sources */,
 				EA03E7EB25AC2B4300EF1FBF /* SceneDelegate.swift in Sources */,
 				EA03E81E25AC344B00EF1FBF /* Project.swift in Sources */,
 				EA03E82125AC39D000EF1FBF /* Parser.swift in Sources */,

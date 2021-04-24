@@ -210,7 +210,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="8mM-Jy-V4t">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProjectCell" rowHeight="146" id="8mM-Jy-V4t" customClass="ProjectCell" customModule="HSEapppSwift" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="146"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8mM-Jy-V4t" id="jww-bJ-u4p">
@@ -261,6 +261,14 @@
                                                                 </label>
                                                             </subviews>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="creditsLabel" destination="z2x-wg-nUQ" id="q8a-5g-rWi"/>
+                                                            <outlet property="deadlineLabel" destination="4W6-u1-h5K" id="TOq-E0-bwl"/>
+                                                            <outlet property="leaderLabel" destination="U7L-jp-0da" id="KPK-tj-kOH"/>
+                                                            <outlet property="projectNameLabel" destination="QKa-Re-b0N" id="Kq3-xl-qZD"/>
+                                                            <outlet property="realisationTimeLabel" destination="dLb-DS-8mh" id="pZF-Xh-z5F"/>
+                                                            <outlet property="recommendedProgramsLabel" destination="LEN-JH-huc" id="Ny9-ev-XUy"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
