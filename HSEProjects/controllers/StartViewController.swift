@@ -14,13 +14,13 @@ class StartViewController: UIViewController {
     
     var infoProject = [ProjectStudents]()
     
-
+    
     @IBOutlet weak var tryLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-
+        
         //        PARSER PETAR
         
         let myURLString = "https://pf.hse.ru/index.html"
@@ -37,9 +37,9 @@ class StartViewController: UIViewController {
                     let element = try doc.select("h3").array()
                     let elementRecommendendedProgramms = try doc.getElementsByClass("edu-dot-dot-dot").array()
                     let elementDeadline = try doc.getElementsMatchingOwnText("2021 г.").array()
-
                     
-        
+                    
+                    
                     do{
                         for index in 0..<element.count{
                             let text = try element[index].text()
@@ -48,17 +48,17 @@ class StartViewController: UIViewController {
                             let newtextRecPrograms = textRecPrograms.dropLast(12)
                             let textDeadline = try elementDeadline[index].text()
                             
-                                
+                            
                             let info = ProjectStudents(name: text, recommendedPrograms: String(newtextRecPrograms), deadline: textDeadline)
                             infoProject.append(info)
                         }
                         
                         print(infoProject[0...3])
-
+                        
                     } 
                 }catch{
                     
-                }catch{
+                    
                     
                 }
             }
@@ -71,27 +71,27 @@ class StartViewController: UIViewController {
         tableView.dataSource = self
     }
     
-
+    
 }
 
 extension StartViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         infoProject.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProjectCell.identifier, for: indexPath) as! ProjectCell
         
         let projects = infoProject[indexPath.row]
-        cell.projectNameLabel.text = "Рекомендуемые образовательные программы:" + " " + projects.name
-        cell.recommendedProgramsLabel.text = projects.recommendedPrograms
-        cell.deadlineLabel.text = projects.deadline
-//        cell.realisationTimeLabel
-//        cell.leaderLabel
+        cell.projectNameLabel.text = projects.name
+        cell.recommendedProgramsLabel.text = "Рекомендуемые образовательные программы:" + " " + projects.recommendedPrograms
+        cell.deadlineLabel.text = "Срок записи на проект:" + " " + projects.deadline
+        //        cell.realisationTimeLabel
+        //        cell.leaderLabel
         
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let projectItem = infoProject[indexPath.row]
         
@@ -107,5 +107,5 @@ extension StartViewController: UITableViewDelegate,UITableViewDataSource{
             secondVC.projectItem = ourProjects
         }
     }
-
+    
 }

@@ -17,12 +17,12 @@ class ProjectDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-
+        
         // Do any additional setup after loading the view.
     }
     private func configure(){
         nameDetailLabel.text = projectItem.name
         deadlineDetailLabel.text = "Срок записи:" + " " + projectItem.deadline
     }
-
+    
 }
