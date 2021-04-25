@@ -83,18 +83,29 @@ extension StartViewController: UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: ProjectCell.identifier, for: indexPath) as! ProjectCell
         
         let projects = infoProject[indexPath.row]
-        cell.projectNameLabel.text = projects.name
-//        cell.recommendedProgramsLabel
-//        cell.deadlineLabel
+        cell.projectNameLabel.text = "Рекомендуемые образовательные программы:" + " " + projects.name
+        cell.recommendedProgramsLabel.text = projects.recommendedPrograms
+        cell.deadlineLabel.text = projects.deadline
 //        cell.realisationTimeLabel
 //        cell.leaderLabel
         
         return cell
     }
 
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let projectItem = infoProject[indexPath.row]
+        
+        performSegue(withIdentifier: "ShowDetail", sender: projectItem)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            guard let secondVC = segue.destination as? ProjectDetailViewController,
+                  let ourProjects = sender as? ProjectStudents
+            else{
+                fatalError("ERROR ERROR")
+            }
+            secondVC.projectItem = ourProjects
+        }
+    }
 
 }

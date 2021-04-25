@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF443EDE26323A2100A3CC66 /* ProjectStudents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EDD26323A2100A3CC66 /* ProjectStudents.swift */; };
 		BF443EE42633066700A3CC66 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EE32633066700A3CC66 /* ProjectCell.swift */; };
+		BF443F002635A1F000A3CC66 /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF443EFF2635A1F000A3CC66 /* ProjectDetailViewController.swift */; };
 		EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */; };
 		EA03E7EB25AC2B4300EF1FBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */; };
 		EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		BF443EDD26323A2100A3CC66 /* ProjectStudents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStudents.swift; sourceTree = "<group>"; };
 		BF443EE32633066700A3CC66 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		BF443EFF2635A1F000A3CC66 /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		EA03E7E525AC2B4300EF1FBF /* HSEapppSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSEapppSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA03E7E825AC2B4300EF1FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA03E7EA25AC2B4300EF1FBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				EA03E7EC25AC2B4300EF1FBF /* ViewController.swift */,
 				EA03E81B25AC2D7900EF1FBF /* StartViewController.swift */,
+				BF443EFF2635A1F000A3CC66 /* ProjectDetailViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA03E81C25AC2D7900EF1FBF /* StartViewController.swift in Sources */,
+				BF443F002635A1F000A3CC66 /* ProjectDetailViewController.swift in Sources */,
 				BF443EE42633066700A3CC66 /* ProjectCell.swift in Sources */,
 				EA03E7ED25AC2B4300EF1FBF /* ViewController.swift in Sources */,
 				EA03E7E925AC2B4300EF1FBF /* AppDelegate.swift in Sources */,
