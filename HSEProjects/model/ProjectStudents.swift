@@ -11,7 +11,7 @@ import Foundation
 struct ProjectStudents{
     var name: String
     var recommendedPrograms: String
-//    var deadline: String
+    var deadline: String
 //    var realisationTime: String
 //    var credits: String
 //    var leader: String

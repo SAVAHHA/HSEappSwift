@@ -20,6 +20,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+
+        //        PARSER PETAR
         
         let myURLString = "https://pf.hse.ru/index.html"
         guard let myUrl = URL(string: myURLString) else {return}
@@ -34,22 +36,21 @@ class StartViewController: UIViewController {
                 do{
                     let element = try doc.select("h3").array()
                     let elementRecommendendedProgramms = try doc.getElementsByClass("edu-dot-dot-dot").array()
-//                    let elementDeadline = try doc.select("span style").array()
-//                    let elementLeader = try doc.select("_blank").array()
+                    let elementDeadline = try doc.getElementsMatchingOwnText("2021 г.").array()
+
                     
         
                     do{
                         for index in 0..<element.count{
                             let text = try element[index].text()
-                            var textRecPrograms = try elementRecommendendedProgramms[index].text()
+                            let textRecPrograms = try elementRecommendendedProgramms[index].text()
                             
-                            var newtextRecPrograms = textRecPrograms.dropLast(12)
-//                            var textLeader = try elementLeader[index].text()
-//                            print(textLeader)
-//                            var textDeadline = try elementDeadline[index].text()
+                            let newtextRecPrograms = textRecPrograms.dropLast(12)
+                            let textDeadline = try elementDeadline[index].text()
+                            
                                 
-                            var name = ProjectStudents(name: text, recommendedPrograms: String(newtextRecPrograms))
-                            infoProject.append(name)
+                            let info = ProjectStudents(name: text, recommendedPrograms: String(newtextRecPrograms), deadline: textDeadline)
+                            infoProject.append(info)
                         }
                         
                         print(infoProject[0...3])
